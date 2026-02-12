@@ -43,7 +43,7 @@ class Settings(BaseSettings):
     # NEW - Currency
     USD_TO_GHS_RATE: float = 11.01
 
-@lru_cache()
+#@lru_cache()
 def get_settings() -> Settings:
     return Settings()
 

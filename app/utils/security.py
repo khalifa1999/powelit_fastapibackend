@@ -2,6 +2,12 @@ from datetime import datetime, timedelta
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 
+# Import settings at module level
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from app.config import settings
+
 pwd_context = CryptContext(
     schemes=["bcrypt"], 
     deprecated="auto",
@@ -28,24 +34,27 @@ def get_password_hash(password: str) -> str:
 
 def create_access_token(data: dict) -> str:
     """Create JWT access token"""
+    from app.config import settings as app_settings
     to_encode = data.copy()
-    expire = datetime.utcnow() + timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
+    expire = datetime.utcnow() + timedelta(minutes=app_settings.ACCESS_TOKEN_EXPIRE_MINUTES)
     to_encode.update({"exp": expire, "type": "access"})
-    encoded_jwt = jwt.encode(to_encode, settings.SECRET_KEY, algorithm="HS256")
+    encoded_jwt = jwt.encode(to_encode, app_settings.SECRET_KEY, algorithm="HS256")
     return encoded_jwt
 
 def create_refresh_token(data: dict) -> str:
     """Create JWT refresh token"""
+    from app.config import settings as app_settings
     to_encode = data.copy()
-    expire = datetime.utcnow() + timedelta(days=settings.REFRESH_TOKEN_EXPIRE_DAYS)
+    expire = datetime.utcnow() + timedelta(days=app_settings.REFRESH_TOKEN_EXPIRE_DAYS)
     to_encode.update({"exp": expire, "type": "refresh"})
-    encoded_jwt = jwt.encode(to_encode, settings.SECRET_KEY, algorithm="HS256")
+    encoded_jwt = jwt.encode(to_encode, app_settings.SECRET_KEY, algorithm="HS256")
     return encoded_jwt
 
 def verify_token(token: str, token_type: str = "access") -> dict:
     """Verify and decode JWT token"""
+    from app.config import settings as app_settings
     try:
-        payload = jwt.decode(token, settings.SECRET_KEY, algorithms=["HS256"])
+        payload = jwt.decode(token, app_settings.SECRET_KEY, algorithms=["HS256"])
         if payload.get("type") != token_type:
             return None
         return payload

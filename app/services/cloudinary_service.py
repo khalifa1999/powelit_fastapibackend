@@ -3,6 +3,7 @@ import cloudinary.uploader
 import os
 from fastapi import UploadFile
 from typing import Optional, Dict, Any
+import io
 from app.config import settings
 
 class CloudinaryService:
@@ -20,13 +21,18 @@ class CloudinaryService:
             # Create folder structure based on user_id or anonymous
             folder = f"powerlit/{user_id}" if user_id else "powerlit/previews"
             
+            # Read file content
+            file_content = await file.read()
+            
+            # Create a bytesio object for cloudinary
+            file_bytes = io.BytesIO(file_content)
+            
             # Upload file
             upload_result = cloudinary.uploader.upload(
-                file.file,
+                file_bytes,
                 folder=folder,
-                resource_type="auto",  # Auto-detect file type
+                resource_type="raw",  # Use raw for PDFs and other documents
                 allowed_formats=["pdf", "png", "jpg", "jpeg"],
-                max_file_size=50 * 1024 * 1024,  # 50MB limit
                 overwrite=True,
                 use_filename=True,
                 unique_filename=True
@@ -42,6 +48,9 @@ class CloudinaryService:
             }
             
         except Exception as e:
+            import traceback
+            print(f"Cloudinary upload error: {str(e)}")
+            print(traceback.format_exc())
             return {
                 "success": False,
                 "error": str(e)
