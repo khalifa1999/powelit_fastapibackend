@@ -28,11 +28,22 @@ opencv-python-headless>=4.13.0
 python-dotenv>=1.0.0
 pydantic>=2.5.0
 pydantic-settings>=2.1.0
+pydantic[email]>=2.5.0
 
 # Utilities
 numpy>=1.24.0
 pandas>=2.1.0
 aiofiles>=23.2.0
+
+# MongoDB & Authentication
+motor>=3.3.0
+beanie>=1.25.0
+python-jose[cryptography]>=3.3.0
+passlib>=1.7.4
+
+# File Storage & Payment
+cloudinary>=1.41.0
+requests>=2.31.0
 
 # Testing
 pytest>=7.4.0

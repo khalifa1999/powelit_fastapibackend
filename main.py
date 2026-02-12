@@ -3,8 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 import os
 
-from app.routers import analysis
+from app.routers import analysis, auth, payments
 from app.config import settings
+from app.database import init_db
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -12,6 +13,10 @@ async def lifespan(app: FastAPI):
     # Startup
     os.makedirs("data/knowledge_base", exist_ok=True)
     os.makedirs("chromadb_store", exist_ok=True)
+    
+    # Initialize MongoDB and Beanie ODM
+    await init_db()
+    
     yield
     # Shutdown
     pass
@@ -27,13 +32,15 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 # Include routers
 app.include_router(analysis.router, prefix="/api/v1/analysis", tags=["analysis"])
+app.include_router(auth.router)
+app.include_router(payments.router)
 
 @app.get("/")
 async def root():

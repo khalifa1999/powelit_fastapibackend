@@ -1,6 +1,7 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, EmailStr
 from typing import List, Optional, Literal
 from enum import Enum
+from datetime import datetime
 
 class BuildingType(str, Enum):
     RESIDENTIAL = "residential"
@@ -41,3 +42,46 @@ class AnalysisRequest(BaseModel):
     building_type: BuildingType
     project_name: Optional[str] = None
     voltage_standard: float = 230.0  # Ghana standard
+
+# Authentication Schemas
+class UserCreate(BaseModel):
+    email: EmailStr
+    password: str = Field(..., min_length=6)
+    full_name: str = Field(..., min_length=2)
+
+class UserLogin(BaseModel):
+    email: EmailStr
+    password: str
+
+class UserResponse(BaseModel):
+    id: str
+    email: str
+    full_name: str
+    subscription_tier: str
+    analyses_limit: int
+    analyses_used: int
+    subscription_expires: Optional[datetime] = None
+
+class Token(BaseModel):
+    access_token: str
+    refresh_token: str
+    token_type: str = "bearer"
+
+class TokenRefresh(BaseModel):
+    refresh_token: str
+
+# Payment Schemas
+class SubscriptionPackage(BaseModel):
+    tier: str
+    usd: float
+    ghs: float
+    description: str
+
+class SubscriptionResponse(BaseModel):
+    authorization_url: str
+    reference: str
+    access_code: str
+
+class WebhookEvent(BaseModel):
+    event: str
+    data: dict
