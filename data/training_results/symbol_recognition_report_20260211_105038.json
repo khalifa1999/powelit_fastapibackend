@@ -1,0 +1,105 @@
+{
+  "timestamp": "2026-02-11T10:50:38.520287",
+  "total_blueprints": 6,
+  "results": [
+    {
+      "filename": "plan a.png",
+      "total_symbols_detected": 11,
+      "symbol_breakdown": {
+        "circles": 9,
+        "rectangles": 0,
+        "crosses": 2,
+        "lines": 635
+      },
+      "components": {
+        "light": {
+          "count": 3,
+          "symbols": [
+            {
+              "type": "circle_light",
+              "position": [
+                937,
+                974
+              ],
+              "confidence": 0.89
+            },
+            {
+              "type": "circle_light",
+              "position": [
+                881,
+                877
+              ],
+              "confidence": 0.81
+            },
+            {
+              "type": "circle_light",
+              "position": [
+                526,
+                332
+              ],
+              "confidence": 0.69
+            }
+          ],
+          "total_watts": 33
+        },
+        "outlet": {
+          "count": 6,
+          "symbols": [
+            {
+              "type": "circle_outlet",
+              "position": [
+                194,
+                921
+              ],
+              "confidence": 0.85
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                618,
+                442
+              ],
+              "confidence": 0.68
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                325,
+                161
+              ],
+              "confidence": 0.67
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                742,
+                697
+              ],
+              "confidence": 0.65
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                592,
+                907
+              ],
+              "confidence": 0.64
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                618,
+                281
+              ],
+              "confidence": 0.61
+            }
+          ],
+          "total_watts": 600
+        },
+        "fan": {
+          "count": 2,
+          "symbols": [
+            {
+              "type": "cross_fan",
+              "position": [
+                

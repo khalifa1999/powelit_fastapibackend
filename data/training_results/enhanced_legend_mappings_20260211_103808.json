@@ -1,0 +1,267 @@
+{
+  "timestamp": "2026-02-11T10:38:08.280221",
+  "total_mappings": 19,
+  "component_types": [
+    "detector",
+    "light",
+    "earthing",
+    "cable",
+    "fan",
+    "outlet",
+    "ac_unit",
+    "stove",
+    "distribution_board",
+    "water_heater"
+  ],
+  "mappings_by_type": {
+    "detector": 5,
+    "light": 4,
+    "earthing": 2,
+    "cable": 1,
+    "fan": 1,
+    "outlet": 1,
+    "ac_unit": 1,
+    "stove": 1,
+    "distribution_board": 2,
+    "water_heater": 1
+  },
+  "detailed_mappings": {
+    "detector_3": {
+      "component_type": "detector",
+      "description": "6A 1-GANG 1-WAY SWITCH 1200 AFFL 1} | ADDRESSABLE SMOKE DETECTOR CEILING",
+      "raw_line": "6A 1-GANG 1-WAY SWITCH 1200 AFFL 1} | ADDRESSABLE SMOKE DETECTOR CEILING",
+      "line_number": 3,
+      "symbol_code": null,
+      "watts": 5,
+      "mounting_height": "1200 AFFL",
+      "keywords_found": [
+        "SWITCH",
+        "DETECTOR",
+        "SMOKE"
+      ]
+    },
+    "detector_4": {
+      "component_type": "detector",
+      "description": "6A 1-GANG 2-WAY SINGLE POLE LIGHT SWITCH 1200 AFFL ADDRESSABLE HEAT DETECTOR CEILING",
+      "raw_line": "6A 1-GANG 2-WAY SINGLE POLE LIGHT SWITCH 1200 AFFL ADDRESSABLE HEAT DETECTOR CEILING",
+      "line_number": 4,
+      "symbol_code": null,
+      "watts": 5,
+      "mounting_height": "1200 AFFL",
+      "keywords_found": [
+        "SWITCH",
+        "DETECTOR",
+        "HEAT"
+      ]
+    },
+    "0": {
+      "component_type": "detector",
+      "description": "Ea 6A 2-GANG 2-WAY SINGLE POLE LIGHT SWITC 3 [0] |MANUAL CALL POINT 1200 AFFL",
+      "raw_line": "Ea 6A 2-GANG 2-WAY SINGLE POLE LIGHT SWITC 3 [0] |MANUAL CALL POINT 1200 AFFL",
+      "line_number": 6,
+      "symbol_code": "0",
+      "watts": 5,
+      "mounting_height": "1200 AFFL",
+      "keywords_found": []
+    },
+    "detector_8": {
+      "component_type": "detector",
+      "description": "FIRE ALARM SOUNDER 1800 AFFL",
+      "raw_line": "FIRE ALARM SOUNDER 1800 AFFL",
+      "line_number": 8,
+      "symbol_code": null,
+      "watts": 5,
+      "mounting_height": "1800 AFFL",
+      "keywords_found": [
+        "FIRE",
+        "ALARM"
+      ]
+    },
+    "detector_10": {
+      "component_type": "detector",
+      "description": "FIRE ALARM PANEL 1800 AFFL",
+      "raw_line": "FIRE ALARM PANEL 1800 AFFL",
+      "line_number": 10,
+      "symbol_code": null,
+      "watts": 5,
+      "mounting_height": "1800 AFFL",
+      "keywords_found": [
+        "FIRE",
+        "ALARM",
+        "PANEL"
+      ]
+    },
+    "light_12": {
+      "component_type": "light",
+      "description": "11W LED RECESSED DOWNLIGHT CEILING",
+      "raw_line": "11W LED RECESSED DOWNLIGHT CEILING",
+      "line_number": 12,
+      "symbol_code": null,
+      "watts": 11,
+      "mounting_height": null,
+      "keywords_found": [
+        "LED",
+        "RECESSED",
+        "DOWNLIGHT"
+      ]
+    },
+    "light_14": {
+      "component_type": "light",
+      "description": "Bic 11W LED SURFACE MOUNTED DOWNLIGHT CEILING",
+      "raw_line": "Bic 11W LED SURFACE MOUNTED DOWNLIGHT CEILING",
+      "line_number": 14,
+      "symbol_code": null,
+      "watts": 11,
+      "mounting_height": null,
+      "keywords_found": [
+        "LED",
+        "SURFACE",
+        "DOWNLIGHT",
+        "AC"
+      ]
+    },
+    "earthing_15": {
+      "component_type": "earthing",
+      "description": "pi} f AIR TERMINAL ROD",
+      "raw_line": "pi} f AIR TERMINAL ROD",
+      "line_number": 15,
+      "symbol_code": null,
+      "watts": 0,
+      "mounting_height": null,
+      "keywords_found": [
+        "AIR"
+      ]
+    },
+    "light_16": {
+      "component_type": "light",
+      "description": "12W LED RECESSED DOWNLIGHT IP21 CEILING -",
+      "raw_line": "12W LED RECESSED DOWNLIGHT IP21 CEILING -",
+      "line_number": 16,
+      "symbol_code": null,
+      "watts": 12,
+      "mounting_height": null,
+      "keywords_found": [
+        "LED",
+        "RECESSED",
+        "DOWNLIGHT"
+      ]
+    },
+    "earthing_17": {
+      "component_type": "earthing",
+      "description": "EARTH INSPECTION CHAMBER",
+      "raw_line": "EARTH INSPECTION CHAMBER",
+      "line_number": 17,
+      "symbol_code": null,
+      "watts": 0,
+      "mounting_height": null,
+      "keywords_found": []
+    },
+    "light_18": {
+      "component_type": "light",
+      "description": "| to) ae LED TRACK LIGHT CEILING",
+      "raw_line": "| to) ae LED TRACK LIGHT CEILING",
+      "line_number": 18,
+      "symbol_code": null,
+      "watts": 12,
+      "mounting_height": null,
+      "keywords_found": [
+        "LED",
+        "TRACK",
+        "AC"
+      ]
+    },
+    "cable_19": {
+      "component_type": "cable",
+      "description": "3 25x3mm COPPER TAPE",
+      "raw_line": "3 25x3mm COPPER TAPE",
+      "line_number": 19,
+      "symbol_code": null,
+      "watts": 0,
+      "mounting_height": null,
+      "keywords_found": []
+    },
+    "fan_20": {
+      "component_type": "fan",
+      "description": "BES 60W FAN WITH REGULATOR CEILING",
+      "raw_line": "BES 60W FAN WITH REGULATOR CEILING",
+      "line_number": 20,
+      "symbol_code": null,
+      "watts": 60,
+      "mounting_height": null,
+      "keywords_found": [
+        "FAN"
+      ]
+    },
+    "outlet_23": {
+      "component_type": "outlet",
+      "description": "P2} aA 13A SWITCHED DOUBLE SOCKET",
+      "raw_line": "P2} aA 13A SWITCHED DOUBLE SOCKET",
+      "line_number": 23,
+      "symbol_code": null,
+      "watts": 100,
+      "mounting_height": null,
+      "keywords_found": [
+        "SWITCH",
+        "SOCKET"
+      ]
+    },
+    "ac_unit_24": {
+      "component_type": "ac_unit",
+      "description": "20A DP SWITCH FOR AIRCONDITION",
+      "raw_line": "20A DP SWITCH FOR AIRCONDITION",
+      "line_number": 24,
+      "symbol_code": null,
+      "watts": 1500,
+      "mounting_height": null,
+      "keywords_found": [
+        "SWITCH",
+        "AIR",
+        "CONDITION"
+      ]
+    },
+    "stove_26": {
+      "component_type": "stove",
+      "description": "Ps | iy COOKER CONTROL UNIT",
+      "raw_line": "Ps | iy COOKER CONTROL UNIT",
+      "line_number": 26,
+      "symbol_code": null,
+      "watts": 8000,
+      "mounting_height": null,
+      "keywords_found": []
+    },
+    "distribution_board_28": {
+      "component_type": "distribution_board",
+      "description": "DISTRIBUTION BOARD",
+      "raw_line": "DISTRIBUTION BOARD",
+      "line_number": 28,
+      "symbol_code": null,
+      "watts": 0,
+      "mounting_height": null,
+      "keywords_found": []
+    },
+    "distribution_board_29": {
+      "component_type": "distribution_board",
+      "description": "Ps | CONSUMER UNIT",
+      "raw_line": "Ps | CONSUMER UNIT",
+      "line_number": 29,
+      "symbol_code": null,
+      "watts": 0,
+      "mounting_height": null,
+      "keywords_found": []
+    },
+    "water_heater_30": {
+      "component_type": "water_heater",
+      "description": "fo} XM WATER HEATER POWER OUTLET",
+      "raw_line": "fo} XM WATER HEATER POWER OUTLET",
+      "line_number": 30,
+      "symbol_code": null,
+      "watts": 3000,
+      "mounting_height": null,
+      "keywords_found": [
+        "OUTLET",
+        "HEAT"
+      ]
+    }
+  },
+  "raw_text": "MOUNTING MOUNTIN\nSYMBO DESCRIPTION HEIGHT SYMBO. DESCRIPTION NEGNT G\n6A 1-GANG 1-WAY SWITCH 1200 AFFL 1} | ADDRESSABLE SMOKE DETECTOR CEILING\n6A 1-GANG 2-WAY SINGLE POLE LIGHT SWITCH 1200 AFFL ADDRESSABLE HEAT DETECTOR CEILING\n3\nEa 6A 2-GANG 2-WAY SINGLE POLE LIGHT SWITC 3 [0] |MANUAL CALL POINT 1200 AFFL\n6A 3-GANG 2-WAY SINGLE POLE LIGHT SWITCH\nFIRE ALARM SOUNDER 1800 AFFL\nPs} t 6A 2-GANG 1-WAY SINGLE POLE LIGHT SWITCH 1200 AFFL 5\nFIRE ALARM PANEL 1800 AFFL\nEs 6A 3-GANG 1-WAY SINGLE POLE LIGHT SWITCH 1200 AFFL\n11W LED RECESSED DOWNLIGHT CEILING\n= SYMBO DESCRIPTION\nBic 11W LED SURFACE MOUNTED DOWNLIGHT CEILING\npi} f AIR TERMINAL ROD\n12W LED RECESSED DOWNLIGHT IP21 CEILING -\nEARTH INSPECTION CHAMBER\n| to) ae LED TRACK LIGHT CEILING\n3 25x3mm COPPER TAPE\nBES 60W FAN WITH REGULATOR CEILING\nSYMBO DESCRIPTION\n13A SHAVER SOCKET\nP2} aA 13A SWITCHED DOUBLE SOCKET\n20A DP SWITCH FOR AIRCONDITION\nZe BRUSHED FACE PLATE FOR HDMI\nPs | iy COOKER CONTROL UNIT\n6} @ TELEVISION OUTLET\nDISTRIBUTION BOARD\nPs | CONSUMER UNIT\nfo} XM WATER HEATER POWER OUTLET\n"
+}

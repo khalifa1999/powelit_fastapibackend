@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-02-11T09:35:42.807804",
+  "results": [
+    {
+      "filename": "plan a.png",
+      "status": "error",
+      "error": "tesseract is not installed or it's not in your PATH. See README file for more information.",
+      "timestamp": "2026-02-11T09:35:40.546819"
+    },
+    {
+      "filename": "plan b.png",
+      "status": "error",
+      "error": "tesseract is not installed or it's not in your PATH. See README file for more information.",
+      "timestamp": "2026-02-11T09:35:40.989020"
+    },
+    {
+      "filename": "plan c.png",
+      "status": "error",
+      "error": "tesseract is not installed or it's not in your PATH. See README file for more information.",
+      "timestamp": "2026-02-11T09:35:41.431725"
+    },
+    {
+      "filename": "plan d.png",
+      "status": "error",
+      "error": "tesseract is not installed or it's not in your PATH. See README file for more information.",
+      "timestamp": "2026-02-11T09:35:41.885251"
+    },
+    {
+      "filename": "plan e.png",
+      "status": "error",
+      "error": "tesseract is not installed or it's not in your PATH. See README file for more information.",
+      "timestamp": "2026-02-11T09:35:42.340916"
+    },
+    {
+      "filename": "plan f.png",
+      "status": "error",
+      "error": "tesseract is not installed or it's not in your PATH. See README file for more information.",
+      "timestamp": "2026-02-11T09:35:42.806313"
+    }
+  ]
+}

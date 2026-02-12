@@ -1,0 +1,1725 @@
+{
+  "timestamp": "2026-02-11T10:51:32.235832",
+  "total_blueprints": 6,
+  "results": [
+    {
+      "filename": "plan a.png",
+      "total_symbols_detected": 11,
+      "symbol_breakdown": {
+        "circles": 9,
+        "rectangles": 0,
+        "crosses": 2,
+        "lines": 635
+      },
+      "components": {
+        "light": {
+          "count": 3,
+          "symbols": [
+            {
+              "type": "circle_light",
+              "position": [
+                937,
+                974
+              ],
+              "confidence": 0.89
+            },
+            {
+              "type": "circle_light",
+              "position": [
+                881,
+                877
+              ],
+              "confidence": 0.81
+            },
+            {
+              "type": "circle_light",
+              "position": [
+                526,
+                332
+              ],
+              "confidence": 0.69
+            }
+          ],
+          "total_watts": 33
+        },
+        "outlet": {
+          "count": 6,
+          "symbols": [
+            {
+              "type": "circle_outlet",
+              "position": [
+                194,
+                921
+              ],
+              "confidence": 0.85
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                618,
+                442
+              ],
+              "confidence": 0.68
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                325,
+                161
+              ],
+              "confidence": 0.67
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                742,
+                697
+              ],
+              "confidence": 0.65
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                592,
+                907
+              ],
+              "confidence": 0.64
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                618,
+                281
+              ],
+              "confidence": 0.61
+            }
+          ],
+          "total_watts": 600
+        },
+        "fan": {
+          "count": 2,
+          "symbols": [
+            {
+              "type": "cross_fan",
+              "position": [
+                456,
+                517
+              ],
+              "confidence": 0.73
+            },
+            {
+              "type": "cross_fan",
+              "position": [
+                392,
+                796
+              ],
+              "confidence": 0.71
+            }
+          ],
+          "total_watts": 120
+        }
+      },
+      "wiring_segments": 635,
+      "detections": [
+        {
+          "type": "circle_light",
+          "component": "light",
+          "position": {
+            "x": 937,
+            "y": 974
+          },
+          "size": {
+            "w": 30,
+            "h": 25
+          },
+          "confidence": 0.89
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 194,
+            "y": 921
+          },
+          "size": {
+            "w": 10,
+            "h": 9
+          },
+          "confidence": 0.85
+        },
+        {
+          "type": "circle_light",
+          "component": "light",
+          "position": {
+            "x": 881,
+            "y": 877
+          },
+          "size": {
+            "w": 32,
+            "h": 37
+          },
+          "confidence": 0.81
+        },
+        {
+          "type": "cross_fan",
+          "component": "fan",
+          "position": {
+            "x": 456,
+            "y": 517
+          },
+          "size": {
+            "w": 20,
+            "h": 20
+          },
+          "confidence": 0.73
+        },
+        {
+          "type": "cross_fan",
+          "component": "fan",
+          "position": {
+            "x": 392,
+            "y": 796
+          },
+          "size": {
+            "w": 20,
+            "h": 20
+          },
+          "confidence": 0.71
+        },
+        {
+          "type": "circle_light",
+          "component": "light",
+          "position": {
+            "x": 526,
+            "y": 332
+          },
+          "size": {
+            "w": 15,
+            "h": 29
+          },
+          "confidence": 0.69
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 618,
+            "y": 442
+          },
+          "size": {
+            "w": 8,
+            "h": 10
+          },
+          "confidence": 0.68
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 325,
+            "y": 161
+          },
+          "size": {
+            "w": 9,
+            "h": 16
+          },
+          "confidence": 0.67
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 742,
+            "y": 697
+          },
+          "size": {
+            "w": 8,
+            "h": 15
+          },
+          "confidence": 0.65
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 592,
+            "y": 907
+          },
+          "size": {
+            "w": 8,
+            "h": 10
+          },
+          "confidence": 0.64
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 618,
+            "y": 281
+          },
+          "size": {
+            "w": 8,
+            "h": 11
+          },
+          "confidence": 0.61
+        }
+      ]
+    },
+    {
+      "filename": "plan b.png",
+      "total_symbols_detected": 16,
+      "symbol_breakdown": {
+        "circles": 12,
+        "rectangles": 0,
+        "crosses": 4,
+        "lines": 669
+      },
+      "components": {
+        "outlet": {
+          "count": 12,
+          "symbols": [
+            {
+              "type": "circle_outlet",
+              "position": [
+                855,
+                181
+              ],
+              "confidence": 0.92
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                1073,
+                824
+              ],
+              "confidence": 0.91
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                996,
+                824
+              ],
+              "confidence": 0.91
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                839,
+                340
+              ],
+              "confidence": 0.78
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                726,
+                1063
+              ],
+              "confidence": 0.73
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                498,
+                1014
+              ],
+              "confidence": 0.73
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                254,
+                1012
+              ],
+              "confidence": 0.73
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                93,
+                737
+              ],
+              "confidence": 0.73
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                1091,
+                692
+              ],
+              "confidence": 0.73
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                1000,
+                251
+              ],
+              "confidence": 0.67
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                815,
+                686
+              ],
+              "confidence": 0.66
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                655,
+                840
+              ],
+              "confidence": 0.63
+            }
+          ],
+          "total_watts": 1200
+        },
+        "fan": {
+          "count": 4,
+          "symbols": [
+            {
+              "type": "cross_fan",
+              "position": [
+                736,
+                489
+              ],
+              "confidence": 0.72
+            },
+            {
+              "type": "cross_fan",
+              "position": [
+                736,
+                561
+              ],
+              "confidence": 0.72
+            },
+            {
+              "type": "cross_fan",
+              "position": [
+                736,
+                525
+              ],
+              "confidence": 0.72
+            },
+            {
+              "type": "cross_fan",
+              "position": [
+                736,
+                453
+              ],
+              "confidence": 0.72
+            }
+          ],
+          "total_watts": 240
+        }
+      },
+      "wiring_segments": 669,
+      "detections": [
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 855,
+            "y": 181
+          },
+          "size": {
+            "w": 11,
+            "h": 11
+          },
+          "confidence": 0.92
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 1073,
+            "y": 824
+          },
+          "size": {
+            "w": 10,
+            "h": 10
+          },
+          "confidence": 0.91
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 996,
+            "y": 824
+          },
+          "size": {
+            "w": 10,
+            "h": 10
+          },
+          "confidence": 0.91
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 839,
+            "y": 340
+          },
+          "size": {
+            "w": 13,
+            "h": 9
+          },
+          "confidence": 0.78
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 726,
+            "y": 1063
+          },
+          "size": {
+            "w": 9,
+            "h": 15
+          },
+          "confidence": 0.73
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 498,
+            "y": 1014
+          },
+          "size": {
+            "w": 9,
+            "h": 15
+          },
+          "confidence": 0.73
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 254,
+            "y": 1012
+          },
+          "size": {
+            "w": 9,
+            "h": 15
+          },
+          "confidence": 0.73
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 93,
+            "y": 737
+          },
+          "size": {
+            "w": 9,
+            "h": 15
+          },
+          "confidence": 0.73
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 1091,
+            "y": 692
+          },
+          "size": {
+            "w": 9,
+            "h": 15
+          },
+          "confidence": 0.73
+        },
+        {
+          "type": "cross_fan",
+          "component": "fan",
+          "position": {
+            "x": 736,
+            "y": 489
+          },
+          "size": {
+            "w": 20,
+            "h": 20
+          },
+          "confidence": 0.72
+        },
+        {
+          "type": "cross_fan",
+          "component": "fan",
+          "position": {
+            "x": 736,
+            "y": 561
+          },
+          "size": {
+            "w": 20,
+            "h": 20
+          },
+          "confidence": 0.72
+        },
+        {
+          "type": "cross_fan",
+          "component": "fan",
+          "position": {
+            "x": 736,
+            "y": 525
+          },
+          "size": {
+            "w": 20,
+            "h": 20
+          },
+          "confidence": 0.72
+        },
+        {
+          "type": "cross_fan",
+          "component": "fan",
+          "position": {
+            "x": 736,
+            "y": 453
+          },
+          "size": {
+            "w": 20,
+            "h": 20
+          },
+          "confidence": 0.72
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 1000,
+            "y": 251
+          },
+          "size": {
+            "w": 8,
+            "h": 10
+          },
+          "confidence": 0.67
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 815,
+            "y": 686
+          },
+          "size": {
+            "w": 8,
+            "h": 10
+          },
+          "confidence": 0.66
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 655,
+            "y": 840
+          },
+          "size": {
+            "w": 8,
+            "h": 10
+          },
+          "confidence": 0.63
+        }
+      ]
+    },
+    {
+      "filename": "plan c.png",
+      "total_symbols_detected": 22,
+      "symbol_breakdown": {
+        "circles": 26,
+        "rectangles": 1,
+        "crosses": 1,
+        "lines": 644
+      },
+      "components": {
+        "light": {
+          "count": 3,
+          "symbols": [
+            {
+              "type": "circle_light",
+              "position": [
+                439,
+                470
+              ],
+              "confidence": 0.89
+            },
+            {
+              "type": "circle_light",
+              "position": [
+                768,
+                493
+              ],
+              "confidence": 0.89
+            },
+            {
+              "type": "circle_light",
+              "position": [
+                768,
+                712
+              ],
+              "confidence": 0.87
+            }
+          ],
+          "total_watts": 33
+        },
+        "outlet": {
+          "count": 17,
+          "symbols": [
+            {
+              "type": "circle_outlet",
+              "position": [
+                900,
+                422
+              ],
+              "confidence": 0.82
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                900,
+                601
+              ],
+              "confidence": 0.82
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                436,
+                877
+              ],
+              "confidence": 0.8
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                265,
+                573
+              ],
+              "confidence": 0.8
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                353,
+                601
+              ],
+              "confidence": 0.79
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                745,
+                151
+              ],
+              "confidence": 0.79
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                527,
+                151
+              ],
+              "confidence": 0.79
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                981,
+                877
+              ],
+              "confidence": 0.79
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                525,
+                234
+              ],
+              "confidence": 0.78
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                745,
+                234
+              ],
+              "confidence": 0.78
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                183,
+                906
+              ],
+              "confidence": 0.77
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                860,
+                601
+              ],
+              "confidence": 0.75
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                317,
+                266
+              ],
+              "confidence": 0.74
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                460,
+                635
+              ],
+              "confidence": 0.73
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                660,
+                778
+              ],
+              "confidence": 0.72
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                753,
+                603
+              ],
+              "confidence": 0.68
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                922,
+                765
+              ],
+              "confidence": 0.66
+            }
+          ],
+          "total_watts": 1700
+        },
+        "switch": {
+          "count": 1,
+          "symbols": [
+            {
+              "type": "square_switch",
+              "position": [
+                604,
+                308
+              ],
+              "confidence": 0.8
+            }
+          ],
+          "total_watts": 0
+        },
+        "fan": {
+          "count": 1,
+          "symbols": [
+            {
+              "type": "cross_fan",
+              "position": [
+                611,
+                790
+              ],
+              "confidence": 0.72
+            }
+          ],
+          "total_watts": 60
+        }
+      },
+      "wiring_segments": 644,
+      "detections": [
+        {
+          "type": "circle_light",
+          "component": "light",
+          "position": {
+            "x": 439,
+            "y": 470
+          },
+          "size": {
+            "w": 22,
+            "h": 22
+          },
+          "confidence": 0.89
+        },
+        {
+          "type": "circle_light",
+          "component": "light",
+          "position": {
+            "x": 768,
+            "y": 493
+          },
+          "size": {
+            "w": 22,
+            "h": 22
+          },
+          "confidence": 0.89
+        },
+        {
+          "type": "circle_light",
+          "component": "light",
+          "position": {
+            "x": 768,
+            "y": 712
+          },
+          "size": {
+            "w": 22,
+            "h": 22
+          },
+          "confidence": 0.87
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 900,
+            "y": 422
+          },
+          "size": {
+            "w": 11,
+            "h": 13
+          },
+          "confidence": 0.82
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 900,
+            "y": 601
+          },
+          "size": {
+            "w": 11,
+            "h": 13
+          },
+          "confidence": 0.82
+        },
+        {
+          "type": "square_switch",
+          "component": "switch",
+          "position": {
+            "x": 604,
+            "y": 308
+          },
+          "size": {
+            "w": 37,
+            "h": 17
+          },
+          "confidence": 0.8
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 436,
+            "y": 877
+          },
+          "size": {
+            "w": 13,
+            "h": 11
+          },
+          "confidence": 0.8
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 265,
+            "y": 573
+          },
+          "size": {
+            "w": 13,
+            "h": 11
+          },
+          "confidence": 0.8
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 353,
+            "y": 601
+          },
+          "size": {
+            "w": 13,
+            "h": 11
+          },
+          "confidence": 0.79
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 745,
+            "y": 151
+          },
+          "size": {
+            "w": 11,
+            "h": 13
+          },
+          "confidence": 0.79
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 527,
+            "y": 151
+          },
+          "size": {
+            "w": 11,
+            "h": 13
+          },
+          "confidence": 0.79
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 981,
+            "y": 877
+          },
+          "size": {
+            "w": 10,
+            "h": 13
+          },
+          "confidence": 0.79
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 525,
+            "y": 234
+          },
+          "size": {
+            "w": 12,
+            "h": 13
+          },
+          "confidence": 0.78
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 745,
+            "y": 234
+          },
+          "size": {
+            "w": 13,
+            "h": 13
+          },
+          "confidence": 0.78
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 183,
+            "y": 906
+          },
+          "size": {
+            "w": 8,
+            "h": 15
+          },
+          "confidence": 0.77
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 860,
+            "y": 601
+          },
+          "size": {
+            "w": 14,
+            "h": 10
+          },
+          "confidence": 0.75
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 317,
+            "y": 266
+          },
+          "size": {
+            "w": 11,
+            "h": 13
+          },
+          "confidence": 0.74
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 460,
+            "y": 635
+          },
+          "size": {
+            "w": 5,
+            "h": 11
+          },
+          "confidence": 0.73
+        },
+        {
+          "type": "cross_fan",
+          "component": "fan",
+          "position": {
+            "x": 611,
+            "y": 790
+          },
+          "size": {
+            "w": 20,
+            "h": 20
+          },
+          "confidence": 0.72
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 660,
+            "y": 778
+          },
+          "size": {
+            "w": 8,
+            "h": 15
+          },
+          "confidence": 0.72
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 753,
+            "y": 603
+          },
+          "size": {
+            "w": 8,
+            "h": 15
+          },
+          "confidence": 0.68
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 922,
+            "y": 765
+          },
+          "size": {
+            "w": 11,
+            "h": 8
+          },
+          "confidence": 0.66
+        }
+      ]
+    },
+    {
+      "filename": "plan d.png",
+      "total_symbols_detected": 17,
+      "symbol_breakdown": {
+        "circles": 19,
+        "rectangles": 0,
+        "crosses": 1,
+        "lines": 768
+      },
+      "components": {
+        "light": {
+          "count": 3,
+          "symbols": [
+            {
+              "type": "circle_light",
+              "position": [
+                529,
+                515
+              ],
+              "confidence": 0.9
+            },
+            {
+              "type": "circle_light",
+              "position": [
+                529,
+                725
+              ],
+              "confidence": 0.9
+            },
+            {
+              "type": "circle_light",
+              "position": [
+                880,
+                453
+              ],
+              "confidence": 0.89
+            }
+          ],
+          "total_watts": 33
+        },
+        "outlet": {
+          "count": 13,
+          "symbols": [
+            {
+              "type": "circle_outlet",
+              "position": [
+                435,
+                673
+              ],
+              "confidence": 0.85
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                435,
+                786
+              ],
+              "confidence": 0.81
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                992,
+                606
+              ],
+              "confidence": 0.78
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                713,
+                325
+              ],
+              "confidence": 0.78
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                882,
+                418
+              ],
+              "confidence": 0.77
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                350,
+                308
+              ],
+              "confidence": 0.77
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                920,
+                969
+              ],
+              "confidence": 0.77
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                946,
+                984
+              ],
+              "confidence": 0.76
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                1114,
+                851
+              ],
+              "confidence": 0.76
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                863,
+                683
+              ],
+              "confidence": 0.71
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                378,
+                280
+              ],
+              "confidence": 0.71
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                630,
+                930
+              ],
+              "confidence": 0.66
+            },
+            {
+              "type": "circle_outlet",
+              "position": [
+                650,
+                169
+              ],
+              "confidence": 0.66
+            }
+          ],
+          "total_watts": 1300
+        },
+        "fan": {
+          "count": 1,
+          "symbols": [
+            {
+              "type": "cross_fan",
+              "position": [
+                678,
+                540
+              ],
+              "confidence": 0.72
+            }
+          ],
+          "total_watts": 60
+        }
+      },
+      "wiring_segments": 768,
+      "detections": [
+        {
+          "type": "circle_light",
+          "component": "light",
+          "position": {
+            "x": 529,
+            "y": 515
+          },
+          "size": {
+            "w": 22,
+            "h": 22
+          },
+          "confidence": 0.9
+        },
+        {
+          "type": "circle_light",
+          "component": "light",
+          "position": {
+            "x": 529,
+            "y": 725
+          },
+          "size": {
+            "w": 22,
+            "h": 22
+          },
+          "confidence": 0.9
+        },
+        {
+          "type": "circle_light",
+          "component": "light",
+          "position": {
+            "x": 880,
+            "y": 453
+          },
+          "size": {
+            "w": 22,
+            "h": 22
+          },
+          "confidence": 0.89
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 435,
+            "y": 673
+          },
+          "size": {
+            "w": 11,
+            "h": 13
+          },
+          "confidence": 0.85
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 435,
+            "y": 786
+          },
+          "size": {
+            "w": 11,
+            "h": 14
+          },
+          "confidence": 0.81
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 992,
+            "y": 606
+          },
+          "size": {
+            "w": 13,
+            "h": 11
+          },
+          "confidence": 0.78
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 713,
+            "y": 325
+          },
+          "size": {
+            "w": 13,
+            "h": 11
+          },
+          "confidence": 0.78
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 882,
+            "y": 418
+          },
+          "size": {
+            "w": 11,
+            "h": 13
+          },
+          "confidence": 0.77
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 350,
+            "y": 308
+          },
+          "size": {
+            "w": 11,
+            "h": 13
+          },
+          "confidence": 0.77
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 920,
+            "y": 969
+          },
+          "size": {
+            "w": 10,
+            "h": 14
+          },
+          "confidence": 0.77
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 946,
+            "y": 984
+          },
+          "size": {
+            "w": 9,
+            "h": 13
+          },
+          "confidence": 0.76
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 1114,
+            "y": 851
+          },
+          "size": {
+            "w": 13,
+            "h": 11
+          },
+          "confidence": 0.76
+        },
+        {
+          "type": "cross_fan",
+          "component": "fan",
+          "position": {
+            "x": 678,
+            "y": 540
+          },
+          "size": {
+            "w": 20,
+            "h": 20
+          },
+          "confidence": 0.72
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 863,
+            "y": 683
+          },
+          "size": {
+            "w": 5,
+            "h": 11
+          },
+          "confidence": 0.71
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 378,
+            "y": 280
+          },
+          "size": {
+            "w": 7,
+            "h": 10
+          },
+          "confidence": 0.71
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 630,
+            "y": 930
+          },
+          "size": {
+            "w": 7,
+            "h": 10
+          },
+          "confidence": 0.66
+        },
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 650,
+            "y": 169
+          },
+          "size": {
+            "w": 7,
+            "h": 10
+          },
+          "confidence": 0.66
+        }
+      ]
+    },
+    {
+      "filename": "plan e.png",
+      "total_symbols_detected": 5,
+      "symbol_breakdown": {
+        "circles": 4,
+        "rectangles": 0,
+        "crosses": 1,
+        "lines": 503
+      },
+      "components": {
+        "outlet": {
+          "count": 1,
+          "symbols": [
+            {
+              "type": "circle_outlet",
+              "position": [
+                664,
+                237
+              ],
+              "confidence": 0.89
+            }
+          ],
+          "total_watts": 100
+        },
+        "light": {
+          "count": 3,
+          "symbols": [
+            {
+              "type": "circle_light",
+              "position": [
+                557,
+                988
+              ],
+              "confidence": 0.87
+            },
+            {
+              "type": "circle_light",
+              "position": [
+                357,
+                462
+              ],
+              "confidence": 0.68
+            },
+            {
+              "type": "circle_light",
+              "position": [
+                773,
+                817
+              ],
+              "confidence": 0.62
+            }
+          ],
+          "total_watts": 33
+        },
+        "fan": {
+          "count": 1,
+          "symbols": [
+            {
+              "type": "cross_fan",
+              "position": [
+                718,
+                550
+              ],
+              "confidence": 0.73
+            }
+          ],
+          "total_watts": 60
+        }
+      },
+      "wiring_segments": 503,
+      "detections": [
+        {
+          "type": "circle_outlet",
+          "component": "outlet",
+          "position": {
+            "x": 664,
+            "y": 237
+          },
+          "size": {
+            "w": 11,
+            "h": 11
+          },
+          "confidence": 0.89
+        },
+        {
+          "type": "circle_light",
+          "component": "light",
+          "position": {
+            "x": 557,
+            "y": 988
+          },
+          "size": {
+            "w": 23,
+            "h": 23
+          },
+          "confidence": 0.87
+        },
+        {
+          "type": "cross_fan",
+          "component": "fan",
+          "position": {
+            "x": 718,
+            "y": 550
+          },
+          "size": {
+            "w": 20,
+            "h": 20
+          },
+          "confidence": 0.73
+        },
+        {
+          "type": "circle_light",
+          "component": "light",
+          "position": {
+            "x": 357,
+            "y": 462
+          },
+          "size": {
+            "w": 23,
+            "h": 23
+          },
+          "confidence": 0.68
+        },
+        {
+          "type": "circle_light",
+          "component": "light",
+          "position": {
+            "x": 773,
+            "y": 817
+          },
+          "size": {
+            "w": 22,
+            "h": 23
+          },
+          "confidence": 0.62
+        }
+      ]
+    },
+    {
+      "filename": "plan f.png",
+      "total_symbols_detected": 2,
+      "symbol_breakdown": {
+        "circles": 0,
+        "rectangles": 0,
+        "crosses": 2,
+        "lines": 96
+      },
+      "components": {
+        "fan": {
+          "count": 2,
+          "symbols": [
+            {
+              "type": "cross_fan",
+              "position": [
+                735,
+                537
+              ],
+              "confidence": 0.72
+            },
+            {
+              "type": "cross_fan",
+              "position": [
+                735,
+                573
+              ],
+              "confidence": 0.72
+            }
+          ],
+          "total_watts": 120
+        }
+      },
+      "wiring_segments": 96,
+      "detections": [
+        {
+          "type": "cross_fan",
+          "component": "fan",
+          "position": {
+            "x": 735,
+            "y": 537
+          },
+          "size": {
+            "w": 20,
+            "h": 20
+          },
+          "confidence": 0.72
+        },
+        {
+          "type": "cross_fan",
+          "component": "fan",
+          "position": {
+            "x": 735,
+            "y": 573
+          },
+          "size": {
+            "w": 20,
+            "h": 20
+          },
+          "confidence": 0.72
+        }
+      ]
+    }
+  ]
+}
