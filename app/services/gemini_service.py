@@ -12,14 +12,34 @@ from google.genai import types
 from google.api_core.exceptions import ResourceExhausted, ServiceUnavailable, DeadlineExceeded
 from app.config import settings
 from app.models.schemas import ElectricalComponent
+import os
 
 
 class GeminiBlueprintService:
     """Service for analyzing electrical blueprints using Gemini API"""
-    
+
+    # MIME type mapping for supported file formats
+    MIME_TYPES = {
+        '.pdf': 'application/pdf',
+        '.png': 'image/png',
+        '.jpg': 'image/jpeg',
+        '.jpeg': 'image/jpeg',
+    }
+
     def __init__(self):
-        self.client = genai.Client(api_key=settings.GOOGLE_API_KEY)
-        self.model = 'gemini-3-flash-preview'
+        try:
+            if not settings.GOOGLE_API_KEY:
+                raise ValueError("GOOGLE_API_KEY is not set")
+            self.client = genai.Client(api_key=settings.GOOGLE_API_KEY)
+            self.model = 'gemini-3-flash-preview'
+        except Exception as e:
+            print(f"❌ Failed to initialize Gemini service: {e}")
+            raise
+
+    def _get_mime_type(self, filename: str) -> str:
+        """Get the correct MIME type based on file extension"""
+        ext = os.path.splitext(filename)[1].lower()
+        return self.MIME_TYPES.get(ext, 'image/png')  # Default to image/png for unknown types
         
     async def analyze_blueprint(
         self, 
@@ -39,9 +59,9 @@ class GeminiBlueprintService:
             List of ElectricalComponent objects
         """
         if legend_file:
-            legend_data = await self._parse_legend(legend_file)
+            legend_data = await self._parse_legend(legend_file, filename)
             components = await self._analyze_with_legend(
-                blueprint_file, 
+                blueprint_file,
                 legend_data,
                 filename
             )
@@ -50,10 +70,10 @@ class GeminiBlueprintService:
             
         return components
     
-    async def _parse_legend(self, legend_file: bytes) -> Dict[str, Dict]:
+    async def _parse_legend(self, legend_file: bytes, filename: str = "legend") -> Dict[str, Dict]:
         """
         Parse legend file to extract symbol mappings
-        
+
         Returns dict like:
         {
             "P1": {"type": "Power Outlet", "watts": 100},
@@ -62,6 +82,7 @@ class GeminiBlueprintService:
         }
         """
         legend_b64 = base64.b64encode(legend_file).decode('utf-8')
+        mime_type = self._get_mime_type(filename)
         
         prompt = """You are an expert electrical engineer analyzing an electrical legend/drawing schedule.
 
@@ -108,7 +129,7 @@ Return ONLY valid JSON, no markdown formatting or explanations."""
                 model=self.model,
                 contents=[
                     prompt,
-                    types.Part.from_bytes(data=legend_file, mime_type="image/png")
+                    types.Part.from_bytes(data=legend_file, mime_type=mime_type)
                 ]
             )
             
@@ -138,14 +159,15 @@ Return ONLY valid JSON, no markdown formatting or explanations."""
             return {}
     
     async def _analyze_with_legend(
-        self, 
+        self,
         blueprint_file: bytes,
         legend_data: Dict[str, Dict],
         filename: str
     ) -> List[ElectricalComponent]:
         """Analyze blueprint with known legend data"""
-        
+
         legend_summary = json.dumps(legend_data, indent=2)
+        mime_type = self._get_mime_type(filename)
         
         prompt = f"""You are an expert electrical engineer analyzing an electrical blueprint.
 
@@ -190,13 +212,13 @@ Important:
                 model=self.model,
                 contents=[
                     prompt,
-                    types.Part.from_bytes(data=blueprint_file, mime_type="image/png")
+                    types.Part.from_bytes(data=blueprint_file, mime_type=mime_type)
                 ]
             )
-            
+
             response_text = response.text or ""
             result = self._extract_json_from_response(response_text)
-            
+
             components = []
             for comp in result.get("components", []):
                 qty = comp.get("quantity", 0)
@@ -208,9 +230,9 @@ Important:
                         rating_watts=watts,
                         total_watts=qty * watts
                     ))
-                    
+
             return components
-            
+
         except ResourceExhausted:
             raise Exception("RATE_LIMIT_EXCEEDED")
         except ServiceUnavailable:
@@ -222,13 +244,14 @@ Important:
             return []
     
     async def _analyze_combined(
-        self, 
+        self,
         blueprint_file: bytes,
         filename: str
     ) -> List[ElectricalComponent]:
         """Analyze blueprint without separate legend (legend is in the same file or not provided)"""
-        
+
         blueprint_b64 = base64.b64encode(blueprint_file).decode('utf-8')
+        mime_type = self._get_mime_type(filename)
         
         prompt = """You are an expert electrical engineer analyzing an electrical blueprint.
 
@@ -288,13 +311,13 @@ Important:
                 model=self.model,
                 contents=[
                     prompt,
-                    types.Part.from_bytes(data=blueprint_file, mime_type="image/png")
+                    types.Part.from_bytes(data=blueprint_file, mime_type=mime_type)
                 ]
             )
-            
+
             response_text = response.text or ""
             result = self._extract_json_from_response(response_text)
-            
+
             components = []
             for comp in result.get("components", []):
                 qty = comp.get("quantity", 0)
@@ -307,9 +330,9 @@ Important:
                         rating_watts=watts,
                         total_watts=qty * watts
                     ))
-                    
+
             return components
-            
+
         except ResourceExhausted:
             raise Exception("RATE_LIMIT_EXCEEDED")
         except ServiceUnavailable:
